@@ -1,3 +1,3 @@
 git add -A
-git commit -m "add index"
+git commit -m "add images and cards"
 git push
