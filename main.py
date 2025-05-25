@@ -7,14 +7,12 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     card_data = (
-        ("Title", "Description", "Button text", "static/images/placeholder.png"),
-        ("Title", "Description", "Button text", "static/images/placeholder.png"),
-        ("Title", "Description", "Button text", "static/images/placeholder.png"),
-        ("Title", "Description", "Button text", "static/images/placeholder.png"),
-        ("Title", "Description", "Button text", "static/images/placeholder.png"),
-        ("Title", "Description", "Button text", "static/images/placeholder.png"),
+        ("Title", "Description", "Button text", "static/images/logo.png"),
+        ("Title", "Description", "Button text", "static/images/logo.png"),
+        ("Title", "Description", "Button text", "static/images/logo.png"),
+        ("Title", "Description", "Button text", "static/images/logo.png"),
     )
-    return render_template("index.html"), 200
+    return render_template("index.html", cards=card_data), 200
 
 
 if __name__ == '__main__':
