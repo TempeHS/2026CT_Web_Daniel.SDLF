@@ -7,16 +7,13 @@
       <div class="card" style="width: 18rem">
         <img src="{{ card[3] }}" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title"Card title>{{ card [0] }}</h5>
-          <p class="card-text">{{ card [1] }}</p>
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
-          </p>
-          <a href="{{ card [2] }}" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">{{ card[0] }}</h5>
+          <p class="card-text">{{ card[1] }}</p>
+          <a href="#" class="btn btn-primary">{{ card[2] }}</a>
         </div>
       </div>
     </div>
     {% endfor %}
   </div>
 </div>
-{% endblock %}}
+{% endblock %}
