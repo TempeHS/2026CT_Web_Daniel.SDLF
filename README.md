@@ -1,3 +1,3 @@
 git add -A
-git commit -m "add ttf files and rac.html"
+git commit -m "add whatever idc"
 git push

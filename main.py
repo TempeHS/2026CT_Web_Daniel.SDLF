@@ -7,10 +7,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     card_data = (
-        ("Title", "Description", "Button text", "static/images/CARDONE.png"),
-        ("Title", "Description", "Button text", "static/images/CARDTWO.png"),
-        ("Title", "Description", "Button text", "static/images/CARDTHREE.png"),
-        ("Title", "Description", "Button text", "static/images/CARDFOUR.png"),
+        ("Fantasy", "A type of genre", "Explore", "static/images/CARDONE.png"),
+        ("Horror", "A type of genre", "Explore", "static/images/CARDTWO.png"),
+        ("Sci-Fi", "A type of genre", "Explore", "static/images/CARDTHREE.png"),
+        ("Historic", "A type of genre", "Explore", "static/images/CARDFOUR.png"),
     )
     return render_template("index.html", cards=card_data), 200
 
@@ -25,6 +25,18 @@ def RAC():
     return render_template("RAC.html"), 200
 
 
+@app.route('/Home.html')
+def Home():
+    return render_template("Home.html"), 200
+
+
+@app.route('/TTHP.html')
+def TTHP():
+    return render_template("TTHP.html"), 200
+
+@app.route('/WG.html')
+def WG():
+    return render_template("WG.html"), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
